@@ -18,11 +18,11 @@ app = Flask(__name__)
  
  
 
-final = pd.read_pickle("C:\\Users\\rajbh\\OneDrive\\Desktop\\JPPY2202-Automated Bird Species\\SOURCE CODE\\birds audio detection\\extracted_df.pkl")
+final = pd.read_pickle("extracted_df.pkl")
 y = np.array(final["name"].tolist())
 le = LabelEncoder()
 le.fit_transform(y)
-Model1_ANN = load_model("C:\\Users\\rajbh\\OneDrive\\Desktop\\JPPY2202-Automated Bird Species\\SOURCE CODE\\birds audio detection\\Model1.h5")
+Model1_ANN = load_model("Model1.h5")
 
 
 def extract_feature(audio_path):
