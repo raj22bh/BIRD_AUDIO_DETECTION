@@ -12,6 +12,3 @@ American Robin
 Song Sparrow
 Northern Mockingbird
 
-Artificial Neural Networks model (ANN model)
-
-Training accuracy of 100% and validation accuracy of 97%
